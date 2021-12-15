@@ -6,7 +6,20 @@ namespace Open_Lab_03._11
     {
         public bool IsPalindrome(string str)
         {
-            throw new NotImplementedException();
-        } 
+            char[] array = str.ToCharArray();
+            Array.Reverse(array);
+
+            if (new String(array) == str)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    
     }
-}
+}  
+        
+       
